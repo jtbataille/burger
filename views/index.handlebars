@@ -2,8 +2,22 @@
 
 <ol>
     {{#each burgers}}
-        <li>{{this.id}}</li>
-        <button data-id="{{this.id}}" class="devourbtn">Devour</button>
+        {{#unless devoured}}
+            <li>
+                <p>{{this.id}}.{{this.burger_name}}</p>
+                <button data-id="{{this.id}}" class="devourbtn">Devour</button>
+            </li>
+        {{/unless}}
+    {{/each}}
+</ol>
+<ol>
+    {{#each burgers}}
+        {{#if devoured}}
+            <li>
+                <p>{{this.id}}.{{this.burger_name}}</p>
+            </li>
+        {{/if}}
+    {{/each}}
 </ol>
 
 <form>
