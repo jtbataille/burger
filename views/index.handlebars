@@ -1,0 +1,13 @@
+<h1>Eat-Da-Burger!</h1>
+
+<ol>
+    {{#each burgers}}
+        <li>{{this.id}}</li>
+        <button data-id="{{this.id}}" class="devourbtn">Devour</button>
+</ol>
+
+<form>
+    <input type="text" rows="4" cols="50">
+    <br><br>
+    <button type="submit">Submit</button>
+</form>
