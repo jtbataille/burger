@@ -6,13 +6,13 @@ const burger = {
             cb(res);
         });
     },
-    insertOne: function(cb) {
-        orm.insertOne("burgers", (res) => {
+    insertOne: function(cols, vals, cb) {
+        orm.insertOne("burgers", cols, vals, (res) => {
             cb(res);
         });
     },
-    updateOne: function(cb) {
-        orm.updateOne("burgers", (res) => {
+    updateOne: function(cols, condition, cb) {
+        orm.updateOne("burgers", cols, condition, (res) => {
             cb(res);
         });
     }
