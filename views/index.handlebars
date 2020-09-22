@@ -3,25 +3,21 @@
 <ol>
     {{#each burgers}}
         {{#unless devoured}}
-            <li>
-                <p>{{this.id}}.{{this.burger_name}}</p>
+                <p>{{this.id}}. {{burger_name}}</p>
                 <button data-id="{{this.id}}" class="devourbtn">Devour</button>
-            </li>
         {{/unless}}
     {{/each}}
 </ol>
 <ol>
     {{#each burgers}}
         {{#if devoured}}
-            <li>
-                <p>{{this.id}}.{{this.burger_name}}</p>
-            </li>
+                <p>{{this.id}}. {{burger_name}}</p>
         {{/if}}
     {{/each}}
 </ol>
 
 <form>
-    <input type="text" rows="4" cols="50">
+    <input type="text">
     <br><br>
     <button class="submitBtn" type="submit">Submit</button>
 </form>
