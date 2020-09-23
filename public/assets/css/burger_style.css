@@ -1,0 +1,39 @@
+body {
+    background-color: grey;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+.lefthand {
+    margin-left: 20%;
+    width: 40%;
+    float: left;
+}
+
+.righthand {
+    width: 40%;
+    float: right;
+}
+
+h3 {
+    text-align: center;
+    color: white;
+}
+
+form {
+    text-align: center;
+}
+
+button {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.submitBtn {
+    background: pink;
+    color: black;
+}
