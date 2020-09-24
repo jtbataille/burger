@@ -19,9 +19,9 @@ router.post("/api/burgers", (req, res) => {
     });
 });
 
-router.put("/api/burger/:id", (req, res) => {
+router.put("/api/burgers/:id", (req, res) => {
     const condition = "id= " + req.params.id;
-    const col = "devoured= " + req.body.devoured;
+    const col = " devoured= " + req.body.devoured;
 
     console.log("condition", condition);
     console.log(col);

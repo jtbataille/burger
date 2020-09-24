@@ -16,7 +16,12 @@ const orm = {
         });
     },
     updateOne: function(table, col, condition, cb) {
-        var queryString = "UPDATE ?? SET ?? WHERE ??";
+        var queryString = "UPDATE " + table;
+        queryString += " SET";
+        queryString += col;
+        queryString += " WHERE ";
+        queryString += condition;
+        
         connection.query(queryString, [table, col, condition], (err, result) => {
             if (err) throw err;
             cb(result);

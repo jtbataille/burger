@@ -13,9 +13,14 @@ h1 {
     float: left;
 }
 
-.righthand {
+.righthand, .titleDevour {
     width: 40%;
     float: right;
+}
+
+#devoured {
+    background-color: black;
+    color: white;
 }
 
 h3 {
@@ -27,6 +32,7 @@ h3 {
 .burgerText {
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
+    padding: 5px;
 }
 
 .row::after {
