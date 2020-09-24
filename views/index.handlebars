@@ -1,7 +1,9 @@
+{{!-- Sets body's pre-header as an image --}}
 <img src="/assets/img/burger.png" class="burgimg" height="175" alt="Photo of a burger">
 
 <h1>Eat-Da-Burger!</h1>
 
+{{!-- Creates a row with two columns to handle the undevoured and devoured burgers --}}
 <div class="row">
     <div class="lefthand">
         {{#each burgers}}
@@ -26,6 +28,7 @@
 
 <br>
 
+{{!-- Creates a submit form for each new burger housed under the burger-row display --}}
 <h3>Submit a new burger for your eating pleasure!</h3>
 <form id="createBurger">
     <textarea type="text" name="burger" style="height:50px;width:500px"></textarea>
@@ -33,6 +36,7 @@
     <button class="submitBtn" type="submit">Submit</button>
 </form>
 
+{{!-- Uses Javascript to make AJAX calls to the API to update/change database --}}
 <script type="text/javascript">
     $(".devourbtn").on("click", (event) => {
         var id = $(this).data("id");

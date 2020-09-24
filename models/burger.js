@@ -1,5 +1,7 @@
+// Requires the ORM functions in the ORM module
 const orm = require("../config/orm.js");
 
+// Hardcodes the only table for each function, leaving remaining variables dyanmic
 const burger = {
     selectAll: function(cb) {
         orm.selectAll("burgers", (res) => {
@@ -18,4 +20,5 @@ const burger = {
     }
 };
 
+// Exports as a module
 module.exports = burger;

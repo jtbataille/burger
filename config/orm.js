@@ -1,5 +1,7 @@
+// Requirex the connection to the database from the connection module
 const connection = require("./connection.js");
 
+// Creates functions to be used for each burger option (get all, create, and update status)
 const orm = {
     selectAll: function(table, cb) {
         var queryString = "SELECT * FROM ??";
@@ -25,4 +27,5 @@ const orm = {
     }
 };
 
+// Exports ORM as a module
 module.exports = orm;
