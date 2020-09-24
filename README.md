@@ -38,6 +38,18 @@ If following these commands, users should open their own browsers and go the fol
 Node JS, MySQL, Express.js, Handlebars, JavaScript, CSS
 
 ## Application Demo
+After following the information in the [Installation](#installation) section above--database start within MySQL, navigating to the localhost, as well as running ```node server.js```---users will be greated with an opening page that looks like this:
+
+![startpage](public/assets/img/startpage.png)
+
+
+From here, users may add more burgers in the text box at the bottom of the page OR, if they're feeling the need to satiate their hunger, they may wish use to the **Devour Me!** button to eat a burger of their choosing, which will move the burger to the right-hand side of the screen, showing that it has been consumed:
+
+![devourbutton](public/assets/img/devourbutton.png)
+
+In addition to being deployed on Heroku, a full video showing the app's functionlity can be found here:
+
+[GIF]
 
 ## Contact Information
 * Jarrod Bataille
