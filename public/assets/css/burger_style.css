@@ -1,14 +1,14 @@
 body {
-    background-color: grey;
+    background-image: url('/assets/img/burgerbckg.png');
 }
 
 h1 {
     text-align: center;
-    color: white;
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 60px;
 }
 
 .lefthand {
-    margin-left: 20%;
     width: 40%;
     float: left;
 }
@@ -20,7 +20,20 @@ h1 {
 
 h3 {
     text-align: center;
-    color: white;
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 30px;
+}
+
+.burgerText {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+    margin-bottom: 40px;
 }
 
 form {
@@ -31,9 +44,6 @@ button {
     margin: 5px;
     padding: 10px;
     border-radius: 5px;
-}
-
-.submitBtn {
-    background: pink;
-    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
 }

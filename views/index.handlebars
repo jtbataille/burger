@@ -1,4 +1,4 @@
-<img src="public/assets/img/burger2.png" class="burgimg">
+<img src="/assets/img/burger.png" class="burgimg" height="175" alt="Photo of a burger">
 
 <h1>Eat-Da-Burger!</h1>
 
@@ -6,8 +6,8 @@
     <div class="lefthand">
         {{#each burgers}}
             {{#unless devoured}}
-                <div>
-                    {{this.id}}. {{burger_name}}</p>
+                <div class="burgerText">
+                    {{this.id}}. {{burger_name}}
                     <button class="devourbtn" data-id="{{this.id}}">Devour Me!</button>
                 </div>
             {{/unless}}
@@ -16,7 +16,7 @@
     <div class="righthand">
         {{#each burgers}}
             {{#if devoured}}
-                <div>
+                <div class="burgerText">
                     {{this.id}}. {{burger_name}}
                 </div>
             {{/if}}
@@ -26,9 +26,9 @@
 
 <br>
 
-<h3>Submit a new burger for you eating pleasure!</h3>
+<h3>Submit a new burger for your eating pleasure!</h3>
 <form id="createBurger">
-    <textarea type="text" name="burger"></textarea>
+    <textarea type="text" name="burger" style="height:50px;width:500px"></textarea>
     <br><br>
     <button class="submitBtn" type="submit">Submit</button>
 </form>
