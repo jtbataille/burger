@@ -26,8 +26,6 @@ const orm = {
 
 
         var queryString = "UPDATE ?? SET ??=? WHERE ??=?";
-        console.log(queryString);
-        console.log("****", condition);
         connection.query(queryString, [table, parts[0], val1, cond[0], val2], (err, result) => {
             if (err) throw err;
             cb(result);
