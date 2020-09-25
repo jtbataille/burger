@@ -49,7 +49,7 @@ From here, users may add more burgers in the text box at the bottom of the page 
 
 In addition to being deployed on Heroku, a full video showing the app's functionlity can be found here:
 
-[GIF]
+![burger](https://user-images.githubusercontent.com/65187093/94218953-a17ac480-feb3-11ea-9a11-6d827eafe996.gif)
 
 ## Contact Information
 * Jarrod Bataille
