@@ -16,7 +16,7 @@ The users need not fear, however! They will be able to add as many burgers any t
 This application uses MySQL to store data, as well as Handlebars to dynamically create the UI for each next to-be-devoured and devoured burger on the docket.
 
 ## Installation
-This application is deployed on Heroku for any curious user to satiate his/her hunger.
+This application is deployed on [Heroku](https://desolate-wave-66580.herokuapp.com/) for any curious users to satiate their hunger.
 
 Alternatively, users may clone this repository and use the following commands to make begin the application, entering them in an integrated terminal within the main directory:
 

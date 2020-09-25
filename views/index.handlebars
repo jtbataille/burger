@@ -10,7 +10,7 @@
             {{#unless devoured}}
                 <div class="burgerText">
                     {{id}}. {{burger_name}}
-                    <button class="devourbtn" data-id="{{this.id}}">Devour Me!</button>
+                    <button class="devourbtn" data-id="{{id}}">Devour Me!</button>
                 </div>
             {{/unless}}
         {{/each}}
@@ -37,10 +37,10 @@
 </form>
 
 {{!-- Uses Javascript to make AJAX calls to the API to update/change database --}}
-<script type="text/javascript">
+{{!-- <script type="text/javascript">
     $(".devourbtn").on("click", (event) => {
         var id = $(this).data("id");
-
+        console.log(this);
         var newBurgerStatus = {
             devoured: true
         };
@@ -71,4 +71,4 @@
             location.reload();
         });
     });
-</script>
+</script> --}}
