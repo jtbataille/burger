@@ -25,8 +25,8 @@ router.post("/api/burgers", (req, res) => {
 
 // Creates API root to update a burger's 'devoured' status on the website
 router.put("/api/burgers/:id", (req, res) => {
-    const condition = "id= " + req.params.id;
-    const col = "devoured= " + req.body.devoured;
+    const condition = "id=" + req.params.id;
+    const col = "devoured=" + req.body.devoured;
 
     console.log("condition", condition);
     console.log(col);

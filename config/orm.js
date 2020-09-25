@@ -18,9 +18,17 @@ const orm = {
         });
     },
     updateOne: function(table, col, condition, cb) {
-        var queryString = "UPDATE ?? SET ?? WHERE ??";
+        const parts = col.split("=");
+        const cond = condition.split("=");
 
-        connection.query(queryString, [table, col, condition], (err, result) => {
+        const val1 = parts[1] === "true";
+        const val2 = parseInt(cond[1]);
+
+
+        var queryString = "UPDATE ?? SET ??=? WHERE ??=?";
+        console.log(queryString);
+        console.log("****", condition);
+        connection.query(queryString, [table, parts[0], val1, cond[0], val2], (err, result) => {
             if (err) throw err;
             cb(result);
         });
