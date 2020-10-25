@@ -30,7 +30,7 @@ After installing these packages to make sure the application functions, users sh
 
 This final command will make the app listen on the LocalHost PORT.
 
-If following these commands, users should open their own browsers and go the following address to see the deployed application:
+If following these commands, users should open their own browsers and go to the following address to see the deployed application:
 
 > localhost:8080
 
